@@ -1,8 +1,8 @@
 import square from './index.js';
+import assert from 'assert';
 
 describe('square', () => {
     it('should square value', () => {
-        expect(square(2)).to.be(4);
+        assert.equal(square(2), 4);
     });
 });
-square();
